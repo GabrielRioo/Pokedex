@@ -1,0 +1,17 @@
+.box-pokemon-content {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  justify-content: center;
+
+  margin: 20px 40px;
+}
+
+.box-pokemon {
+  width: auto;
+  height: 125px;
+  background-color: #1D1D1D;
+  color: #fff;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 12px;
+}
