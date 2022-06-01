@@ -67,8 +67,11 @@ export function BoxPokemon({ pokemonName, pokemonId }: any) {
         )}
 
         <p className="name-pokemon">{pokemonName.charAt(0).toUpperCase() + pokemonName.slice(1)}</p>
-        <img src={Pokebola} alt="Pokebola de fundo" className="background-pokebola"/>
-      </div>  
+        <div className="content-pokebola">
+          <img src={Pokebola} alt="Pokebola de fundo" className="background-pokebola"/>
+          <p className="id-pokemon">{pokemonId}</p>  
+        </div>
+      </div>   
     </>
   );
 }

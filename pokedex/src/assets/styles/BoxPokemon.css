@@ -35,12 +35,30 @@
   font-weight: bold;
 }
 
-.background-pokebola {
+.content-pokebola {
   position: absolute;
-  width: 170px;
   right: -20px;
   bottom: -30px;
+}
 
+.background-pokebola {
+  position: relative;
+  width: 170px;
   opacity: 0.3;
   transform: rotate(-30deg);
+}
+
+.id-pokemon {
+  position: absolute;
+  top: 43%;
+
+  width: 100%;
+  text-align: center;
+
+  font-weight: bold;
+  text-shadow:
+    rgba(0, 0, 0, 0.465) 1px -1px 1px, 
+    rgba(0, 0, 0, 0.465) -1px 1px 1px, 
+    rgba(0, 0, 0, 0.465) 1px 1px 1px, 
+    rgba(0, 0, 0, 0.465) -1px -1px 1px
 }
