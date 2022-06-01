@@ -58,18 +58,21 @@ export function BoxPokemon({ pokemonName, pokemonId }: any) {
   return (
     <>
       <div className="box-pokemon" style={{ backgroundColor: boxColor }}>
-        {pokemonSprite !== undefined && (
-          <img
-            src={pokemonSprite}
-            alt="Imagem do Pokemon"
-            className="img-pokemon"
-          />
-        )}
+        <div className="content-pokemon-info">
+          <p className="name-pokemon">{pokemonName.charAt(0).toUpperCase() + pokemonName.slice(1)}</p>
+          {pokemonSprite !== undefined && (
+            <img
+              src={pokemonSprite}
+              alt="Imagem do Pokemon"
+              className="img-pokemon"
+            />
+          )}
 
-        <p className="name-pokemon">{pokemonName.charAt(0).toUpperCase() + pokemonName.slice(1)}</p>
+        </div>
+
         <div className="content-pokebola">
           <img src={Pokebola} alt="Pokebola de fundo" className="background-pokebola"/>
-          <p className="id-pokemon">{pokemonId}</p>  
+          <p className="id-pokemon">{pokemonId}</p>   
         </div>
       </div>   
     </>
