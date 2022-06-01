@@ -22,20 +22,13 @@ type PokemonType = {
 export function SearchPokemon() {
 
   const { data: all_pokemons } = useFetch<AllPokemon>(
-    "https://pokeapi.co/api/v2/pokemon"
+    "https://pokeapi.co/api/v2/pokemon?offset=20&limit=100"
   );
-
-  // const { data: pokemon } = useFetch<Pokemon>(
-  //   `https://pokeapi.co/api/v2/pokemon/${pokemonId}`
-  // );
-
+  
   return (
     <>
       <div className="box-pokemon-content">
         {all_pokemons?.results?.map((item) => {
-          // setPokemonId(item.url.split('/').at(-2)?.toString());
-          // {PokemonInfo(item.url.split('/').at(-2)?.toString())}
-
           return (
             <>
               <BoxPokemon
