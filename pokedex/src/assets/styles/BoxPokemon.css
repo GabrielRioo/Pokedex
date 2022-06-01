@@ -14,4 +14,11 @@
   margin: 5px;
   padding: 10px;
   border-radius: 12px;
+
+  display: flex;
+  flex-direction: row;
+}
+
+.img-pokemon {
+  width: 150px;
 }
