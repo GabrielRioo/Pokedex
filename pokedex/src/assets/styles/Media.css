@@ -1,0 +1,27 @@
+@media(min-width: 1200px) {
+  .box-pokemon-content {
+    grid-template-columns: 25% 25% 25% 25% !important;
+  }
+}
+
+@media(max-width: 1000px) {
+  .box-pokemon-content {
+    grid-template-columns: 50% 50% !important;
+  }
+}
+
+@media(max-width: 710px) {
+  .box-pokemon-content {
+    grid-template-columns: 100% !important;
+  }
+
+  .box-pokemon {
+    width: 300px !important;
+    justify-self: center;
+  }
+
+  .pokedex {
+    width: 100%;
+    min-width: 370px;
+  }
+}

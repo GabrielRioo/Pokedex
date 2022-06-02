@@ -1,0 +1,21 @@
+.content-home-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 40px;
+}
+
+.pokedex {
+  margin-top: 30px;
+  margin-left: 10px;
+}
+
+.box-pokemon-content {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+
+  margin: 20px;
+  width: 100%;
+}
+
