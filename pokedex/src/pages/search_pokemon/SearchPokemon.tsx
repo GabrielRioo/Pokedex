@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { BoxPokemon } from "../../components/BoxPokemon";
+import { BoxPokemon } from "../../components/Pokemon/BoxPokemon";
 import {Pokedex} from "../../components/Podedex";
 import { useFetch } from "../../hooks/useFetch";
 
