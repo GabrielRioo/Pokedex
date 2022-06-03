@@ -1,0 +1,61 @@
+.content-weakness-pokemon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  background-color: rgba(0, 0, 0, 0.368);
+  border-radius: 12px;
+  
+  width: 100%;
+  padding: 10px;
+}
+
+.section-weakness-pokemon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  font-size: 10pt;
+  font-weight: bold;
+
+  text-shadow:
+    rgba(0, 0, 0, 0.465) 1px -1px 1px, 
+    rgba(0, 0, 0, 0.465) -1px 1px 1px, 
+    rgba(0, 0, 0, 0.465) 1px 1px 1px, 
+    rgba(0, 0, 0, 0.465) -1px -1px 1px
+}
+
+.weakness-pokemon {
+  margin-left: 5px;
+  /* border: 1px solid rgba(255, 255, 255, 0.39); */
+  /* padding: 2px 10px; */
+  font-size: 10pt;
+  font-weight: 500;
+  color: rgba(244, 244, 244, 0.67);
+  border-radius: 12px;
+}
+
+.double-damage-from {
+  color: rgb(14, 206, 14);
+}
+
+.double-damage-to {
+  color: rgb(206, 120, 14);
+}
+
+.half-damage-from {
+  color: rgb(14, 206, 14);
+}
+
+.half-damage-to {
+  color: rgb(206, 120, 14);
+}
+
+.no-damage-from {
+  color: rgb(14, 206, 14);
+}
+
+.no-damage-to {
+  color: rgb(206, 120, 14);
+}

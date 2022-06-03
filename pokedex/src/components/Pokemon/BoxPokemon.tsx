@@ -42,7 +42,6 @@ type Pokemon = {
 // }
 
 export function BoxPokemon({ pokemonName, pokemonId }: any) {
-  const [pokemonSprite, setPokemonSprite] = useState<string | undefined>("");
   const [pokemonNormalSprite, setPokemonNormalSprite] = useState<
     string | undefined
   >("");
@@ -51,7 +50,7 @@ export function BoxPokemon({ pokemonName, pokemonId }: any) {
   >("");
   const [boxColor, setBoxColor] = useState("");
   const [boxColor2, setBoxColor2] = useState("");
-  const [showAttributes, setShowAttributes] = useState(true);
+  const [showAttributes, setShowAttributes] = useState(true); 
 
   useEffect(() => {
     setPokemonNormalSprite(pokemon?.sprites?.other?.home.front_default);
@@ -108,24 +107,39 @@ export function BoxPokemon({ pokemonName, pokemonId }: any) {
         style={{ backgroundColor: boxColor, transition: "1s" }}
         onClick={
           () => setShowAttributes(!showAttributes)
-          // Pokedex(pokemon?.sprites?.other?.home.front_default.toString())
-        }
+          // Pokedex(pokemon?.sprites?.other?.home.front_default.toString())  
+        } 
       >
         {showAttributes === true ? (
           <>
             <PokemonInfo
               pokemonId={pokemonId}
+              pokemonName={pokemonName} 
+
               pokemonType1={pokemon?.types[0]?.type.name}
-              badgeTypeColor1={boxColor}
-              badgeTypeColor2={boxColor2}
               pokemonType2={pokemon?.types[1]?.type.name}
+
               pokemonNormal={pokemonNormalSprite}
               pokemonShiny={pokemonShinySprite}
-              pokemonName={pokemonName} 
+
+              badgeTypeColor1={boxColor}
+              badgeTypeColor2={boxColor2}
             />
           </>
         ) : (
-          <PokemonInfoReverse show={showAttributes} />
+          <PokemonInfoReverse 
+            pokemonTypeId={pokemon?.types?.[0].type?.url.split("/").at(-2)?.toString()}  
+            show={showAttributes} 
+            
+            pokemonNormal={pokemonNormalSprite}
+            pokemonName={pokemonName} 
+
+            pokemonType1={pokemon?.types[0]?.type.name}
+            pokemonType2={pokemon?.types[1]?.type.name}
+
+            badgeTypeColor1={boxColor}
+            badgeTypeColor2={boxColor2}
+          />
         )}
       </div>
     </>

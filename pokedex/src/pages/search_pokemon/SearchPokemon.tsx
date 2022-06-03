@@ -12,14 +12,6 @@ type AllPokemon = {
   results: [{ name: string; url: string }];
 };
 
-type PokemonType = {
-  results: [
-    {
-      name: string;
-    }
-  ];
-};
-
 export function SearchPokemon() {
   const { data: all_pokemons } = useFetch<AllPokemon>(
     "https://pokeapi.co/api/v2/pokemon"
