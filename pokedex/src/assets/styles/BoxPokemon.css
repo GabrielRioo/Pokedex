@@ -9,8 +9,9 @@
 
 .box-pokemon {
   width: auto;
-  height: 125px;
+  height: 130px;
   background-color: #1D1D1D;
+  box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.815);
   color: #fff;
   margin: 5px;
   padding: 10px;

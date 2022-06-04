@@ -11,6 +11,11 @@
   margin-left: 10px;
 }
 
+.filter-pokemon {
+  display: flex;
+  flex-direction: row;
+}
+
 .box-pokemon-content {
   display: grid;
   grid-template-columns: 33% 33% 33%;
