@@ -41,6 +41,10 @@ type Pokemon = {
 //   return pokedexImage = image;
 // }
 
+function FilterType() {
+  
+}
+
 export function BoxPokemon({ pokemonName, pokemonId }: any) {
   const [pokemonNormalSprite, setPokemonNormalSprite] = useState<
     string | undefined
@@ -102,6 +106,7 @@ export function BoxPokemon({ pokemonName, pokemonId }: any) {
 
   return (
     <>
+    {}
       <div
         className="box-pokemon"
         style={{ backgroundColor: boxColor, transition: "1s" }}
@@ -113,9 +118,9 @@ export function BoxPokemon({ pokemonName, pokemonId }: any) {
         {showAttributes === true ? (
           <>
             <PokemonInfo
-              pokemonId={pokemonId}
+              pokemonId={pokemonId} 
               pokemonName={pokemonName} 
-
+ 
               pokemonType1={pokemon?.types[0]?.type.name}
               pokemonType2={pokemon?.types[1]?.type.name}
 
@@ -130,7 +135,7 @@ export function BoxPokemon({ pokemonName, pokemonId }: any) {
           <PokemonInfoReverse 
             pokemonTypeId={pokemon?.types?.[0].type?.url.split("/").at(-2)?.toString()}  
             show={showAttributes} 
-            
+
             pokemonNormal={pokemonNormalSprite}
             pokemonName={pokemonName} 
 
